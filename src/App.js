@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Mousetrap from 'mousetrap';
 import './App.css';
-import Timer from './Timer.js'
+import Timer from './Timer/Timer.js'
 
 class App extends Component {
   constructor(props) {
