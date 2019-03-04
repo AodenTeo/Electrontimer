@@ -83,9 +83,8 @@ body {
 
 
 .jumbotron {
-  background: url(http://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg) center center;
+  background: url('/Users/aodenteo/Desktop/Projects/ElectronTimer/electrontimer/src/color-2174045_1280.png') center center;
   background-size: cover;
-  height: 600px; 
 }
 
 
@@ -170,7 +169,6 @@ body {
 #timelisttitle {
   text-align: center;
   color: black;
-
 }
 
 #timelistelement{

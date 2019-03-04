@@ -4,7 +4,9 @@ class Timer extends React.Component {
     super(props);
     this.state = { 
       seconds: 0.00,
+      times: []
      }
+     this.addTime = this.props.running;
   }
 
   tick() {
@@ -14,15 +16,18 @@ class Timer extends React.Component {
   }
   componentWillReceiveProps() {
     console.log(this.props.running);
+
     if (!this.props.running) {
       this.setState({
         seconds: 0.00
       })
+
       this.interval = setInterval(() => this.tick(), 10);
     } else {
       clearInterval(this.interval);
     }
   }
+    
 
   render() {
     return (
